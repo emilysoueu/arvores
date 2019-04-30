@@ -47,7 +47,7 @@ int main(void) {
 int exp(void){
 	int temp = term();
 
-	while((token == '+')||(token == '-') ||(token == '/') ||('%')){
+	while((token == '+')||(token == '-') ||(token == '/') ||(token =='%')){
 		switch(token){
 			case '+': match('+');
 					temp += term();
