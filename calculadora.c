@@ -55,12 +55,12 @@ int exp(void){
 			case '-': match('-');
 					temp -= term();
 					break;
-            case '/': match('/');
-                    temp /= term();
-                    break;
-            case '%': match('%');
-                    temp = temp%term();
-                    break;
+            		case '/': match('/');
+                   		 	temp /= term();
+                    			break;
+            		case '%': match('%');
+                    			temp = temp%term();
+                    			break;
 
 		}
 		return temp;
