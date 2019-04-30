@@ -71,6 +71,6 @@ Em que:
     Ci = Chave do Registro (geralmente um código)     -- Registro da árvore
     Di = Dados (ex: endereço do registro no arquivo)  -- Registro da árvore
     Pi = Ponteiro para o i-ésimo filho
-
+ 
 '''
 
