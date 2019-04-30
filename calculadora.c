@@ -47,7 +47,7 @@ int main(void) {
 int exp(void){
 	int temp = term();
 
-	while((token == '+')||(token == '-')){
+	while((token == '+')||(token == '-') ||(token == '/') ||('%')){
 		switch(token){
 			case '+': match('+');
 					temp += term();
@@ -55,6 +55,12 @@ int exp(void){
 			case '-': match('-');
 					temp -= term();
 					break;
+            case '/': match('/');
+                    temp /= term();
+                    break;
+            case '%': match('%');
+                    temp = temp%term();
+                    break;
 
 		}
 		return temp;
@@ -64,6 +70,7 @@ int exp(void){
 
 int factor(void){
 	int temp;
+
 	if (token == '('){
 		match ('(');
 		temp = exp();
@@ -74,13 +81,14 @@ int factor(void){
 		token = getchar();
 	}else
 		error();
-		return temp;
+    return temp;
 
 }
 
 int term(void){
 	int temp = factor();
-	while(token =='*'){
+
+	while(token == '*'){
 		match('*');
 		temp *= factor();
 	}
