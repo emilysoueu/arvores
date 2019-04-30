@@ -14,12 +14,14 @@ Material de Apoio: https://www.youtube.com/watch?v=oxTVYaKGg2A
 Árvore de busca em que cada nodo (ou página) contém mais de 1 elemento
 
 Cada nodo possui vário filhos, bem parecido com árvore de busca binária
+
+Cresce Para cima
 '''
 
 #Ordem na árvore B
 '''
--> autores
-    *Número mínimo de elementos que cada página (exceto raíz) pode ter (Cormen, Bayer e McCreight) [Vou Utilizar]
+-> Autores
+    *Número mínimo de elementos que cada pág ina (exceto raíz) pode ter (Cormen, Bayer e McCreight) [Vou Utilizar]
     Exemplo:
         Árvore de ordem 2 = mínimo 2 filhos e máximo 4 filhos, pois o número mínimo é 50% da capacidade
     *Número de filhos que cada página pode ter (Knuth)
@@ -59,8 +61,16 @@ obs:
 
 #Estrutura da Página (tamanho fixo)
 '''
-----------------------------------------------------------
-|
-----------------------------------------------------------
+Material de Apoio: https://www.youtube.com/watch?v=XkPFu0IsQqo
+
+----------------------------------------------------
+|N| Po| CoDo|P1| C1D1|P2|C2D2|...|Pn-1|Cn-1Dn-1|Pn |
+----------------------------------------------------
+Em que:
+    N  = Número de ELementos Presentes na página
+    Ci = Chave do Registro (geralmente um código)     -- Registro da árvore
+    Di = Dados (ex: endereço do registro no arquivo)  -- Registro da árvore
+    Pi = Ponteiro para o i-ésimo filho
+
 '''
 
