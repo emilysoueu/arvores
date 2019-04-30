@@ -62,5 +62,10 @@ Caso 1: (Remoção Preguiçosa)
     Marca-se o nó como removido, mas sem tirá-lo da árvore
     Não precisa de remanejamento
     Algoritmos de inserção e busca devem ser notificados que o nó foi removido
-'''
+
+Caso 2:
+    Trocar id com nó sucessor
+    Coloração não é alterada
+    Remover então da subárvore do sucessor
+''' 
 
