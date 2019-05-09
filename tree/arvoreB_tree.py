@@ -3,6 +3,7 @@
 30/04/2019
 
 Estrutura de Dados II
+Prof: João Dallyson
 Material de Apoio: https://www.youtube.com/watch?v=oxTVYaKGg2A
 
 '''
